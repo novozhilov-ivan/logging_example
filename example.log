@@ -1,0 +1,22 @@
+2025-04-20T06:10:01 - app - INFO     - example.py      - main       - Старт -  - 
+2025-04-20T06:10:01 - app - DEBUG    - example.py      - main       - Что то тут -  - 
+2025-04-20T06:10:01 - app - DEBUG    - example.py      - main       - Что то там -  - 
+2025-04-20T06:10:01 - app - INFO     - example.py      - main       - Сейчас буду делить на ноль -  - 
+2025-04-20T06:10:01 - app - ERROR    - example.py      - main       - Поймал что то except блоке -  - 
+2025-04-20T06:10:01 - app - WARNING  - example.py      - main       - Печатаю ошибку: division by zero -  - 
+2025-04-20T06:10:01 - app - WARNING  - example.py      - main       - Печатаю exc_info - Exception: Traceback (most recent call last):
+  File "/home/ivan/dev/logging_example/app/example.py", line 14, in main
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero - 
+2025-04-20T06:10:01 - app - WARNING  - example.py      - main       - Печатаю stack_info -  - stackTrace: Stack (most recent call last):
+  File "/home/ivan/dev/logging_example/main.py", line 7, in <module>
+    main()
+  File "/home/ivan/dev/logging_example/app/example.py", line 20, in main
+    logger.warning("Печатаю stack_info", stack_info=True)
+2025-04-20T06:10:01 - app - ERROR    - example.py      - main       - Печатаю из метода exception - Exception: Traceback (most recent call last):
+  File "/home/ivan/dev/logging_example/app/example.py", line 14, in main
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero - 
+2025-04-20T06:10:01 - app - INFO     - example.py      - main       - Завершение работы -  - 
